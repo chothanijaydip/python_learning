@@ -14,7 +14,9 @@ if is_number(a) and is_number(b):
     print("subtraction:", int(a) - int(b))
     print("Multiplication:", int(a) * int(b))
     print("Division:", int(a) / int(b))
-
+else:
+    print("Error: Invalid input!")
+    
 '''
 Task 2
 '''
