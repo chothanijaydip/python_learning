@@ -132,22 +132,74 @@
 # c.state_6()
 
 
-a = 1
-b = 2
-print(a + b)
-print(int.__add__(a, b))
+# a = 1
+# b = 2
+# print(a + b)
+# print(int.__add__(a, b))
+#
+# class vegetable:
+#     def __init__(self, carrot,beans):
+#         self.carrot = carrot
+#         self.beans = beans
+#     def __add__(self, other):
+#         carrot = self.carrot + other.carrot
+#         beans = self.beans + other.beans
+#         return vegetable(carrot, beans)
+#
+# v1 = vegetable(5,3)
+# v2 = vegetable(7,8)
+# v3 = v1 + v2
+# print(v3.carrot)
+# print(v3.beans)
 
-class vegetable:
-    def __init__(self, carrot,beans):
-        self.carrot = carrot
-        self.beans = beans
-    def __add__(self, other):
-        carrot = self.carrot + other.carrot
-        beans = self.beans + other.beans
-        return vegetable(carrot, beans)
+#regular Expressions
+import re
+# pattern = "apple"
+# if re.match(pattern,"appleappball"):
+#     print("True")
+# else:
+#     print("False")
+#
+# string = re.findall("xyz",pattern)
+# print(string)
+#
+# if re.search(pattern,"apple",flags=0):
+#     print("True")
+# else:
+#     print("False")
+#
+# pattern = "Cat"
+# string = "dog"
+# print(re.sub(pattern,"Cat",string,count=0,flags=0))
 
-v1 = vegetable(5,3)
-v2 = vegetable(7,8)
-v3 = v1 + v2
-print(v3.carrot)
-print(v3.beans)
+# CHARACTERS AND CHARACTER SEQUENCES
+# ^ - Matches the beginning of a line
+# $ - Matches the end of a line
+# . - Matches any character
+# \d - Matches any digit
+# \D - Matches any non- digit
+# \s - Matches whitespace
+# \S - Matches any non- whitespace
+
+
+# string = "It is a dog 56"
+# pattern = "^I"
+# print(re.findall(pattern,string,flags=0))
+#
+# pattern = "g$"
+# print(re.findall(pattern,string,flags=0))
+#
+# pattern = "."
+# print(re.findall(pattern,string,flags=0))
+#
+# pattern = "^I..."
+# print(re.findall(pattern,string,flags=0))
+
+# pattern = "\S"
+# print(re.findall(pattern,string,flags=0))
+
+# * - Repeats a character zero or more times
+# + - Repeats a character one or more times
+# ( - Indicates where string extraction is to start
+# ) - Indicates where string extraction is to end
+# ? - Matches the expression to 1 times
