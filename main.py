@@ -57,12 +57,76 @@
 # print("Price: Rs {:.2f}. with tax: Rs {:.2f}.".format(price,with_tax))
 #
 
+#
+# fun = lambda a,b : a+b
+# print(fun(10,11))
+#
+# ans = set(filter(lambda a:a%2==0,range(10)))
+# print(ans)
+#
+# ans = list(map(lambda a : a**2,range(10)))
+# print(ans)
 
-fun = lambda a,b : a+b
-print(fun(10,11))
 
-ans = set(filter(lambda a:a%2==0,range(10)))
-print(ans)
 
-ans = list(map(lambda a : a**2,range(10)))
-print(ans)
+# class const_dest:
+#     x = 0
+#     def __init__(self,color,type):
+#         self.color = color
+#         self.type = type
+#         print("constructed")
+#     def __del__(self):
+#         print("Destructed")
+# cd = const_dest('black','SUV')
+# print(cd.color)
+# print(cd.type)
+#
+# cd_1 = const_dest('red','Sedan')
+# print(cd_1.color)
+# print(cd_1.type)
+
+
+class name:
+    x = 0
+    name = ""
+    def __init__(self, z):
+        self.name  = z
+        print("hi",z)
+
+class football_fans(name):
+    points = 0
+    def pts(self):
+        print(self.name,"scores")
+
+n= name("Jaydip")
+scores = football_fans("Jim")
+scores.pts()
+
+
+
+class A:
+    def state_1(self):
+        print("state 1 present")
+    def state_2(self):
+        print("state 2 present")
+    def state_3(self):
+        print("state 3 present")
+
+class B:
+    def state_4(self):
+        print("state 4 present")
+    def state_5(self):
+        print("state 5 present")
+class C(A,B):
+    def state_6(self):
+        print("state 6 present")
+
+a = A()
+a.state_2()
+
+b=B()
+b.state_4()
+
+c = C()
+c.state_3()
+# c.state_6()
