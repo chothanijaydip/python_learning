@@ -130,3 +130,24 @@
 # c = C()
 # c.state_3()
 # c.state_6()
+
+
+a = 1
+b = 2
+print(a + b)
+print(int.__add__(a, b))
+
+class vegetable:
+    def __init__(self, carrot,beans):
+        self.carrot = carrot
+        self.beans = beans
+    def __add__(self, other):
+        carrot = self.carrot + other.carrot
+        beans = self.beans + other.beans
+        return vegetable(carrot, beans)
+
+v1 = vegetable(5,3)
+v2 = vegetable(7,8)
+v3 = v1 + v2
+print(v3.carrot)
+print(v3.beans)
