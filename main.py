@@ -86,47 +86,47 @@
 # print(cd_1.type)
 
 
-class name:
-    x = 0
-    name = ""
-    def __init__(self, z):
-        self.name  = z
-        print("hi",z)
-
-class football_fans(name):
-    points = 0
-    def pts(self):
-        print(self.name,"scores")
-
-n= name("Jaydip")
-scores = football_fans("Jim")
-scores.pts()
-
-
-
-class A:
-    def state_1(self):
-        print("state 1 present")
-    def state_2(self):
-        print("state 2 present")
-    def state_3(self):
-        print("state 3 present")
-
-class B:
-    def state_4(self):
-        print("state 4 present")
-    def state_5(self):
-        print("state 5 present")
-class C(A,B):
-    def state_6(self):
-        print("state 6 present")
-
-a = A()
-a.state_2()
-
-b=B()
-b.state_4()
-
-c = C()
-c.state_3()
+# class name:
+#     x = 0
+#     name = ""
+#     def __init__(self, z):
+#         self.name  = z
+#         print("hi",z)
+#
+# class football_fans(name):
+#     points = 0
+#     def pts(self):
+#         print(self.name,"scores")
+#
+# n= name("Jaydip")
+# scores = football_fans("Jim")
+# scores.pts()
+#
+#
+#
+# class A:
+#     def state_1(self):
+#         print("state 1 present")
+#     def state_2(self):
+#         print("state 2 present")
+#     def state_3(self):
+#         print("state 3 present")
+#
+# class B:
+#     def state_4(self):
+#         print("state 4 present")
+#     def state_5(self):
+#         print("state 5 present")
+# class C(A,B):
+#     def state_6(self):
+#         print("state 6 present")
+#
+# a = A()
+# a.state_2()
+#
+# b=B()
+# b.state_4()
+#
+# c = C()
+# c.state_3()
 # c.state_6()
