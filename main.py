@@ -203,3 +203,17 @@ import re
 # ( - Indicates where string extraction is to start
 # ) - Indicates where string extraction is to end
 # ? - Matches the expression to 1 times
+
+import  re
+
+string = "From bobby.mark@gmail.com"
+pattern = r"^From (\S+@\S+)"
+match = re.search(pattern, string)
+if match:
+    print(match.group(1))
+
+    # [ ]
+    # [aeiou] - Matches a single character in the listed set
+    # [^xyz] - Matches a single character
+    # [a-z0-9] - Set of characters can include a range
+    # {}
