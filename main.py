@@ -217,3 +217,8 @@ if match:
     # [^xyz] - Matches a single character
     # [a-z0-9] - Set of characters can include a range
     # {}
+string = "Python 3.0"
+pattern = r"[A-Z]"
+match = re.findall(pattern, string)
+if match:
+    print(match)
